@@ -1,6 +1,6 @@
 const oculta = ['hogar', 'australopitecus', 'jardin', 'juego', 'oceano', 'barranco'];
 const palabraoculta = oculta[Math.floor(Math.random() * oculta.length)];
-let palabraoculta1 = palabraoculta.replace(/./g, "_  ");
+let palabraoculta1 = palabraoculta.replace(/./g, "_ ");
 document.querySelector ('.palabraoculta1').innerHTML = palabraoculta1;
 const remplazar = (String,character,index) =>{
     return String.substring(0, index) + character + String.substring(index + character.length);
@@ -33,5 +33,6 @@ const pal = () =>{
         }
         document.querySelector ('.palabraoculta1').innerHTML = palabraoculta1;
 }
+
 
 document.querySelector ('button').addEventListener ('click', pal);
