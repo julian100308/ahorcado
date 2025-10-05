@@ -36,3 +36,4 @@ const pal = () =>{
 
 
 document.querySelector ('button').addEventListener ('click', pal);
+
